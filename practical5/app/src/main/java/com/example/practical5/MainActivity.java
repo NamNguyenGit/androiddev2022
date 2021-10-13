@@ -12,7 +12,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         USTHWeather usth = new USTHWeather();
-        getSupportFragmentManager().beginTransaction().add(R.id.container,usth).commit();
+        WeatherFragment wf = new WeatherFragment();
+//        getSupportFragmentManager().beginTransaction().add(R.id.container,usth).add(R.id.container,wf).commit();
 
     }
 }
