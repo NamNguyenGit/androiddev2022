@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">practical5</string>
+    <string name="Mon">Lundi</string>
+    <string name="Tue">Mardi</string>
+    <string name="Wed">Mercredi</string>
+    <string name="Thu">Jeudi</string>
+    <string name="Fri">Vendredi</string>
+    <string name="Sat">Samedi</string>
+    <string name="Sun">Dimanche</string>
+
+</resources>
