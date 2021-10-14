@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Dropbox</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="File" tools:ignore="MissingTranslation">File</string>
+    <string name="Image" tools:ignore="MissingTranslation">Image</string>
+    <string name="Logout" tools:ignore="MissingTranslation">Log out</string>
+    <string name="Video" tools:ignore="MissingTranslation">Video</string>
+    <string name="Home" tools:ignore="MissingTranslation">Home</string>
+
+</resources>

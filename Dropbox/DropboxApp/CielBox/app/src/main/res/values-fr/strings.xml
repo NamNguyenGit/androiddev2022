@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Dropbox</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Connexion</string>
+    <string name="register">S\'inscrire</string>
+    <string name="email">Email</string>
+    <string name="password">Mot de pas</string>
+    <string name="confirmpassword">Confirmer le mot de passe</string>
+    <string name="File" >Fichier</string>
+    <string name="Image" >Image</string>
+    <string name="Logout" >Déconnexion</string>
+    <string name="Video" >Vidéo</string>
+    <string name="Home" >Accueil</string>
+
+</resources>
