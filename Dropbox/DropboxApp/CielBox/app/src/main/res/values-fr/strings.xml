@@ -12,5 +12,6 @@
     <string name="Logout" >Déconnexion</string>
     <string name="Video" >Vidéo</string>
     <string name="Home" >Accueil</string>
+    <string name="yourgallery">Votre Galerie</string>
 
 </resources>

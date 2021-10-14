@@ -9,10 +9,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Maininterface extends AppCompatActivity {
+    ImageView addimg;
     private ViewPager mViewPager;
     private BottomNavigationView nBottomNavigationView;
 
@@ -20,6 +23,21 @@ public class Maininterface extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maininterface);
+
+        addimg = (ImageView) findViewById(R.id.btnplus) ;
+        addimg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openActivity4();
+
+            }
+        });
+
+
+
+
+
+
 
         mViewPager = findViewById(R.id.view_pager);
         nBottomNavigationView = findViewById(R.id.bottom_navigation);
@@ -88,6 +106,10 @@ public class Maininterface extends AppCompatActivity {
         });
     }
 
+    private void openActivity4(){
+        Intent intent = new Intent(this, GalleryActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -97,6 +119,10 @@ public class Maininterface extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId()==R.id.logout){
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+        }
 
        return super.onOptionsItemSelected(item);
     }

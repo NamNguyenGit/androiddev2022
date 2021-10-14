@@ -2,9 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/maintain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/maintain"
     tools:context=".Maininterface">
 
     <androidx.viewpager.widget.ViewPager
@@ -24,4 +24,22 @@
         app:labelVisibilityMode="labeled"
         app:menu="@menu/menu_navigation" />
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="70dp">
+
+        <ImageView
+            android:id="@+id/btnplus"
+            android:layout_width="100dp"
+            android:layout_height="150px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/btnadd">
+
+        </ImageView>
+    </RelativeLayout>
 </RelativeLayout>
+
+
+

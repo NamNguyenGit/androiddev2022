@@ -9,24 +9,6 @@
 
         <menu>
             <item
-                android:id="@+id/home"
-                android:title="@string/Home"
-                app:showAsAction="always" />
-            <item
-                android:id="@+id/file"
-                android:title="@string/File"
-                app:showAsAction="always" />
-
-            <item
-                android:id="@+id/image"
-                android:title="@string/Image"
-                app:showAsAction="always" />
-
-            <item
-                android:id="@+id/video"
-                android:title="@string/Video"
-                app:showAsAction="always" />
-            <item
                 android:id="@+id/logout"
                 android:title="@string/Logout"
                 app:showAsAction="always" />

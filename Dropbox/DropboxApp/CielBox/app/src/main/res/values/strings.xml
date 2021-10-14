@@ -12,5 +12,6 @@
     <string name="Logout" tools:ignore="MissingTranslation">Log out</string>
     <string name="Video" tools:ignore="MissingTranslation">Video</string>
     <string name="Home" tools:ignore="MissingTranslation">Home</string>
+    <string name="yourgallery">Your Gallery</string>
 
 </resources>
