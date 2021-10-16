@@ -13,5 +13,7 @@
     <string name="Video" >Vidéo</string>
     <string name="Home" >Accueil</string>
     <string name="yourgallery">Votre Galerie</string>
-
+    <string name="Group2" >Groupe 2</string>
+    <string name="aboutus" >A propos de nous</string>
+    <string name="addimg">Ajouter image</string>
 </resources>

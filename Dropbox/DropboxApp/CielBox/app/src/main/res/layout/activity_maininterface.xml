@@ -24,21 +24,31 @@
         app:labelVisibilityMode="labeled"
         app:menu="@menu/menu_navigation" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingBottom="70dp">
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:paddingBottom="70dp">-->
 
-        <ImageView
-            android:id="@+id/btnplus"
-            android:layout_width="100dp"
-            android:layout_height="150px"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:src="@drawable/btnadd">
+<!--        <ImageView-->
+<!--            android:id="@+id/btnplus"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="150px"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:src="@drawable/btnadd">-->
 
-        </ImageView>
-    </RelativeLayout>
+<!--        </ImageView>-->
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/rcv_photo"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="10dp"></androidx.recyclerview.widget.RecyclerView>-->
+
+
+<!--    </RelativeLayout>-->
 </RelativeLayout>
 
 

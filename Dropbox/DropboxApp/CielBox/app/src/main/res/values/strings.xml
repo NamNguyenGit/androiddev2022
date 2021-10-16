@@ -13,5 +13,8 @@
     <string name="Video" tools:ignore="MissingTranslation">Video</string>
     <string name="Home" tools:ignore="MissingTranslation">Home</string>
     <string name="yourgallery">Your Gallery</string>
+    <string name="Group2" tools:ignore="MissingTranslation">Group 2</string>
+    <string name="aboutus" tools:ignore="MissingTranslation">About Us</string>
+    <string name="addimg" tools:ignore="MissingTranslation">Add Image</string>
 
 </resources>
