@@ -45,6 +45,9 @@ public class ImageActivity extends AppCompatActivity {
         } else if (item.getItemId() == R.id.addimg) {
             Intent intent = new Intent(this, ImageActivity.class);
             startActivity(intent);
+        }else if  (item.getItemId() == R.id.profile) {
+            Intent intent = new Intent(this, ProfileActivity.class);
+            startActivity(intent);
         }
 
 

@@ -34,6 +34,11 @@
     <string name="video4" tools:ignore="MissingTranslation">Video 4</string>
     <string name="video5" tools:ignore="MissingTranslation">Video 5</string>
     <string name="video6" tools:ignore="MissingTranslation">Video 6</string>
+    <string name="profile" tools:ignore="MissingTranslation">Profile</string>
+    <string name="myemail" tools:ignore="MissingTranslation">My email</string>
+    <string name="Name" tools:ignore="MissingTranslation">Name</string>
+
+
 
     <string name="welcometodropbox" tools:ignore="MissingTranslation">Welcome to Dropbox</string>
 

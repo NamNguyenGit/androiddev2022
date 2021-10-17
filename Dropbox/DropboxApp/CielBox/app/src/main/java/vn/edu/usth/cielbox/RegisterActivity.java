@@ -14,6 +14,7 @@ public class RegisterActivity extends AppCompatActivity {
     EditText editmail;
     EditText editpass1;
     EditText cfpass;
+    EditText nameuser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +24,7 @@ public class RegisterActivity extends AppCompatActivity {
         editmail = (EditText) findViewById(R.id.newusername) ;
         editpass1 = (EditText) findViewById(R.id.newpassword);
         cfpass = (EditText) findViewById(R.id.cfpassword) ;
-
+        nameuser = (EditText)findViewById(R.id.name);
         backlogin = (TextView) findViewById(R.id.newbutton);
         backlogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,10 +35,14 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void registeruser() {
+        String nameu = nameuser.getEditableText().toString().trim();
         String emailuser = editmail.getEditableText().toString().trim();
         String passuser = editpass1.getEditableText().toString().trim();
         String cfpassuser = cfpass.getEditableText().toString().trim();
-        if(emailuser.isEmpty()){
+        if(nameu.isEmpty()){
+            Toast.makeText(this,"Name required",Toast.LENGTH_LONG).show();
+        }
+        else if(emailuser.isEmpty()){
             Toast.makeText(this,"Email required",Toast.LENGTH_LONG).show();
         }
         else if(passuser.isEmpty()){

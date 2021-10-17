@@ -35,4 +35,7 @@
     <string name="video4" >Vidéo 4</string>
     <string name="video5" >Vidéo 5</string>
     <string name="video6" >Vidéo 6</string>
+    <string name="profile">Profil</string>
+    <string name="myemail" >Mon e-mail</string>
+    <string name="Name" >Nom</string>
 </resources>
