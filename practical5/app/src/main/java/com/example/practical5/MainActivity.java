@@ -8,7 +8,9 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import com.google.android.material.tabs.TabLayout;
@@ -32,15 +34,12 @@ public class MainActivity extends AppCompatActivity {
 
         USTHWeather usth = new USTHWeather();
         WeatherFragment wf = new WeatherFragment();
-//        getSupportFragmentManager().beginTransaction().add(R.id.container,usth).add(R.id.container,wf).commit();
+
 
 
     }
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        return super.onOptionsItemSelected(item);
-    }
+
 
     public class HomeFragmentPagerAdapter extends FragmentPagerAdapter {
         private final int PAGE_COUNT = 3;
@@ -67,6 +66,17 @@ public class MainActivity extends AppCompatActivity {
 // returns a tab title corresponding to the specified page
             return titles[page];
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.toolbarmenu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        return super.onOptionsItemSelected(item);
     }
 
 }
