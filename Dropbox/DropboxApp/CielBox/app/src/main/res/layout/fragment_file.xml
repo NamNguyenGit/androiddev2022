@@ -1,14 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:padding="10dp"
+    android:background="@android:color/holo_blue_light"
     tools:context=".FileFragment">
 
+    <RelativeLayout
+        android:id="@+id/all1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/file1"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:src="@drawable/testfile"></ImageView>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/file1"
+            android:layout_centerHorizontal="true"
+            android:text="@string/file1"
+            android:textColor="@color/black"
+            android:textSize="30dp">
+
+        </TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/all2"
+        android:layout_toRightOf="@+id/all1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/file2"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:src="@drawable/testfile"></ImageView>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/file2"
+            android:text="@string/file2"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black">
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/all4"
+        android:layout_below="@+id/all2"
+        android:layout_toRightOf="@+id/all3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/file4"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:src="@drawable/testfile"></ImageView>
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/file4"
+            android:text="@string/file4"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black">
+
+        </TextView>
+    </RelativeLayout>
 
 
-    <!-- TODO: Update blank fragment layout -->
 
 
-</FrameLayout>
+    <RelativeLayout
+        android:id="@+id/all3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/all1"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/file3"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:src="@drawable/testfile"></ImageView>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/file3"
+            android:layout_centerHorizontal="true"
+            android:text="@string/file3"
+            android:textColor="@color/black"
+            android:textSize="30dp">
+
+        </TextView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/all5"
+        android:layout_below="@id/all3"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/file5"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:src="@drawable/testfile"></ImageView>
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/file5"
+            android:layout_centerHorizontal="true"
+            android:text="@string/file5"
+            android:textColor="@color/black"
+            android:textSize="30dp">
+
+        </TextView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/all6"
+        android:layout_below="@+id/all4"
+        android:layout_toRightOf="@+id/all5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/file6"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:src="@drawable/testfile"></ImageView>
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/file6"
+            android:text="@string/file6"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black">
+
+        </TextView>
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

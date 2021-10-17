@@ -5,9 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
+    EditText editgmail;
+    EditText editpass;
+
     private TextView login;
     private TextView register;
 
@@ -17,11 +22,14 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        editgmail = (EditText) findViewById(R.id.username);
+        editpass = (EditText) findViewById(R.id.password);
+
         login = (TextView) findViewById(R.id.button);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivity2();
+                confirmuser();
             }
         });
 
@@ -33,6 +41,21 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void confirmuser() {
+        String emailuser = editgmail.getEditableText().toString().trim();
+        String passuser = editpass.getEditableText().toString().trim();
+        if(emailuser.isEmpty()){
+            Toast.makeText(this,"Email required",Toast.LENGTH_LONG).show();
+        }
+        else if(passuser.isEmpty()){
+            Toast.makeText(this,"Password required",Toast.LENGTH_LONG).show();
+        }
+        else {
+            openActivity2();
+            Toast.makeText(this,"Login Succesfully ",Toast.LENGTH_LONG).show();
+        }
     }
 
     public void openActivity2() {
