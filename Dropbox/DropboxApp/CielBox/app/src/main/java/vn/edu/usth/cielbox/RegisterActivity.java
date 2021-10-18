@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.regex.Pattern;
 
 public class RegisterActivity extends AppCompatActivity {
     private TextView backlogin;
@@ -33,6 +36,9 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
     }
+    public static final Pattern EMAIL_ADDRESS = Pattern.compile(
+            "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+    );
 
     private void registeruser() {
         String nameu = nameuser.getEditableText().toString().trim();
@@ -44,6 +50,9 @@ public class RegisterActivity extends AppCompatActivity {
         }
         else if(emailuser.isEmpty()){
             Toast.makeText(this,"Email required",Toast.LENGTH_LONG).show();
+        }
+        else if(!Patterns.EMAIL_ADDRESS.matcher(emailuser).matches()){
+            Toast.makeText(this,"Email address wrong",Toast.LENGTH_LONG).show();
         }
         else if(passuser.isEmpty()){
             Toast.makeText(this,"Password required",Toast.LENGTH_LONG).show();
