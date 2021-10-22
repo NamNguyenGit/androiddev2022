@@ -10,12 +10,15 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,7 +79,38 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId()==R.id.refresh){
+            buttonClick();
+        }
+
         return super.onOptionsItemSelected(item);
+    }
+
+    private void buttonClick() {
+        final Handler handler = new Handler();
+
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                synchronized (this){
+                    try {
+                        wait(4000);
+                    } catch (InterruptedException e){
+                        e.printStackTrace();
+                    }
+                }
+
+                handler.post(new Runnable() {
+                                 @Override
+                                 public void run() {
+                                     Toast.makeText(MainActivity.this, "Refresh successful", Toast.LENGTH_SHORT).show();
+                                 }
+                             }
+                );
+            }
+        };
+        Thread thread = new Thread(runnable);
+        thread.start();
     }
 
 }
