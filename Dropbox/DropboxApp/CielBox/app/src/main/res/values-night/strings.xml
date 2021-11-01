@@ -39,7 +39,7 @@
     <string name="Name" tools:ignore="MissingTranslation">Name</string>
     <string name="Account" tools:ignore="MissingTranslation">Account</string>
     <string name="home" tools:ignore="MissingTranslation">Home</string>
-    <string name="text" tools:ignore="MissingTranslation">Light Mode</string>
+    <string name="text" tools:ignore="MissingTranslation">Night Mode</string>
 
     <string name="welcometodropbox" tools:ignore="MissingTranslation">Welcome to Dropbox</string>
 

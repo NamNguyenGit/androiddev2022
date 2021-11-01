@@ -12,6 +12,7 @@
     <string name="Logout" >Déconnexion</string>
     <string name="Video" >Vidéo</string>
     <string name="Home" >Accueil</string>
+    <string name="home" >accueil</string>
     <string name="yourgallery">Votre Galerie</string>
     <string name="Group2" >Groupe 2</string>
     <string name="aboutus" >A propos de nous</string>
@@ -38,4 +39,6 @@
     <string name="profile">Profil</string>
     <string name="myemail" >Mon e-mail</string>
     <string name="Name" >Nom</string>
+    <string name="Account" >Compte</string>
+    Account
 </resources>

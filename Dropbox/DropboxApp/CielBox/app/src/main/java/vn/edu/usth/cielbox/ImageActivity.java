@@ -42,11 +42,11 @@ public class ImageActivity extends AppCompatActivity {
         } else if (item.getItemId() == R.id.aboutus) {
             Intent intent = new Intent(this, AboutUsActivity.class);
             startActivity(intent);
-        } else if (item.getItemId() == R.id.addimg) {
-            Intent intent = new Intent(this, ImageActivity.class);
-            startActivity(intent);
-        }else if  (item.getItemId() == R.id.profile) {
+        } else if  (item.getItemId() == R.id.profile) {
             Intent intent = new Intent(this, ProfileActivity.class);
+            startActivity(intent);
+        }else if  (item.getItemId() == R.id.home) {
+            Intent intent = new Intent(this, HomeActivity.class);
             startActivity(intent);
         }
 
