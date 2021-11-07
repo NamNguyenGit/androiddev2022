@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Laptop88/AndroidStudioProjects/DBXdemo/app/src/main/res/drawable/round_btn.xml" value="0.2203125" />
+        <entry key="..\:/Users/Laptop88/AndroidStudioProjects/DBXdemo/app/src/main/res/layout/activity_connect.xml" value="0.1" />
+        <entry key="..\:/Users/Laptop88/AndroidStudioProjects/DBXdemo/app/src/main/res/layout/activity_files.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Laptop88/AndroidStudioProjects/DBXdemo/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Laptop88/AndroidStudioProjects/DBXdemo/app/src/main/res/layout/app_bar.xml" value="0.1" />
+        <entry key="..\:/Users/Laptop88/AndroidStudioProjects/DBXdemo/app/src/main/res/layout/content_files.xml" value="0.1" />
+        <entry key="..\:/Users/Laptop88/AndroidStudioProjects/DBXdemo/app/src/main/res/layout/files_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Laptop88/AndroidStudioProjects/DBXdemo/app/src/main/res/layout/header.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Laptop88/AndroidStudioProjects/DBXdemo/app/src/main/res/layout/nav_header_files.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Laptop88/AndroidStudioProjects/DBXdemo/app/src/main/res/menu/activity_main_drawer.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Laptop88/AndroidStudioProjects/DBXdemo/app/src/main/res/menu/main_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/acer/Desktop/DropboxClient-main/DropboxClient-main/DBXdemo/app/src/main/res/drawable-hdpi/backgroundprofile.xml" value="0.1" />
+        <entry key="..\:/Users/acer/Desktop/DropboxClient-main/DropboxClient-main/DBXdemo/app/src/main/res/layout/activity_about_us.xml" value="0.2" />
+        <entry key="..\:/Users/acer/Desktop/DropboxClient-main/DropboxClient-main/DBXdemo/app/src/main/res/layout/activity_connect.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/acer/Desktop/DropboxClient-main/DropboxClient-main/DBXdemo/app/src/main/res/layout/activity_files.xml" value="0.24444444444444444" />
+        <entry key="..\:/Users/acer/Desktop/DropboxClient-main/DropboxClient-main/DBXdemo/app/src/main/res/layout/activity_night_mode.xml" value="0.2" />
+        <entry key="..\:/Users/acer/Desktop/DropboxClient-main/DropboxClient-main/DBXdemo/app/src/main/res/layout/activity_profile.xml" value="0.25" />
+        <entry key="..\:/Users/acer/Desktop/DropboxClient-main/DropboxClient-main/DBXdemo/app/src/main/res/layout/activity_user.xml" value="0.2" />
+        <entry key="..\:/Users/acer/Desktop/DropboxClient-main/DropboxClient-main/DBXdemo/app/src/main/res/layout/app_bar.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/acer/Desktop/DropboxClient-main/DropboxClient-main/DBXdemo/app/src/main/res/layout/content_profile.xml" value="0.25" />
+        <entry key="..\:/Users/acer/Desktop/DropboxClient-main/DropboxClient-main/DBXdemo/app/src/main/res/layout/files_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/acer/Desktop/DropboxClient-main/DropboxClient-main/DBXdemo/app/src/main/res/layout/fragment_first.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/acer/Desktop/DropboxClient-main/DropboxClient-main/DBXdemo/app/src/main/res/layout/fragment_second.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/acer/Desktop/DropboxClient-main/DropboxClient-main/DBXdemo/app/src/main/res/layout/header.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/acer/Desktop/DropboxClient-main/DropboxClient-main/DBXdemo/app/src/main/res/menu/main_menu.xml" value="0.4" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

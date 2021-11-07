@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DBXdemo</string>
+    <string name = "Group2"> Nhóm 2 </string>
+    <string name = "AboutUs"> Giới thiệu về chúng tôi </string>
+    <string name = "NightMode"> Chế độ ban đêm </string>
+    <string name = "Language"> Ngôn ngữ </string>
+    <string name = "ViewFiles"> Xem tệp </string>
+    <string name = "LoginwithDropbox"> Đăng nhập bằng Dropbox </string>
+    <string name="Reload" >Tải lại</string>
+    <string name="myemail" >Email của tôi</string>
+    <string name="Name" >Tên</string>
+    <string name="user" >Hồ sơ</string>
+    <string name="type" >Kiểu</string>
+</resources>

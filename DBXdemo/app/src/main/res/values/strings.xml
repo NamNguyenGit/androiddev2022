@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">DBXdemo</string>
+    <string name="title_activity_profile" tools:ignore="MissingTranslation">Title activity profile</string>
+    <string name="app_key" tools:ignore="MissingTranslation">4mmqdqfnfaj9r6c </string>
+    <string name="navigation_drawer_open" tools:ignore="MissingTranslation">Open navigation drawer</string>
+    <string name="navigation_drawer_close" tools:ignore="MissingTranslation">Close navigation drawer</string>
+    <string name="Group2">Group 2</string>
+    <string name="AboutUs" tools:ignore="MissingTranslation">About Us</string>
+    <string name="NightMode" tools:ignore="MissingTranslation">Night Mode</string>
+    <string name="Language" tools:ignore="MissingTranslation">Language</string>
+    <string name="ViewFiles" tools:ignore="MissingTranslation">View Files</string>
+    <string name="LoginwithDropbox" tools:ignore="MissingTranslation">Login with Dropbox</string>
+    <string name="Reload" tools:ignore="MissingTranslation">Reload</string>
+    <string name="myemail" tools:ignore="MissingTranslation">My email</string>
+    <string name="Name" tools:ignore="MissingTranslation">Name</string>
+    <string name="user" tools:ignore="MissingTranslation">Profile</string>
+
+    <string name="type" tools:ignore="MissingTranslation">Type</string>
+
+
+</resources>

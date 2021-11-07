@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DBXdemo</string>
+    <string name="Group2">Groupe 2</string>
+    <string name="AboutUs">À propos de nous</string>
+    <string name="NightMode">Mode nuit</string>
+    <string name="Language">Langue</string>
+    <string name="ViewFiles">Afficher les fichiers</string>
+    <string name="LoginwithDropbox" >Se connecter avec Dropbox</string>
+    <string name="Reload" >Recharger</string>
+    <string name="myemail" >Mon e-mail</string>
+    <string name="Name" >Nom</string>
+    <string name="user" >Profil</string>
+    <string name="type" >Taper</string>
+</resources>
