@@ -25,7 +25,7 @@ public class ConnectActivity extends DropboxActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DropboxActivity.startOAuth2Authentication(ConnectActivity.this, getString(R.string.app_key), Arrays.asList("account_info.read", "files.content.write"));
+                DropboxActivity.startOAuth2Authentication(ConnectActivity.this, getString(R.string.app_key), Arrays.asList("account_info.read", "files.content.write","files.content.read"));
             }
         });
 

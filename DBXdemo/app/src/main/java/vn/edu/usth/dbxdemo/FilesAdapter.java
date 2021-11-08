@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.MimeTypeMap;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,18 +18,23 @@ import com.dropbox.core.v2.files.Metadata;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-public class FilesAdapter extends RecyclerView.Adapter<FilesAdapter.MetadataViewHolder> {
-    private List<Metadata> mFiles;
+public class FilesAdapter extends RecyclerView.Adapter<FilesAdapter.MetadataViewHolder>  {
+    private static List<Metadata> mFiles;
     private final Picasso mPicasso;
     private final Callback mCallback;
+
+
 
     public void setFiles(List<Metadata> files) {
         mFiles = Collections.unmodifiableList(new ArrayList<>(files));
         notifyDataSetChanged();
     }
+
+
 
     public interface Callback {
         void onFolderClicked(FolderMetadata folder);

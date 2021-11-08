@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Switch;
 
-public class NightModeActivity extends AppCompatActivity {
+public class NightModeActivity extends DropboxActivity {
 
     Switch switchCompat;
 
@@ -52,5 +52,10 @@ public class NightModeActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    protected void loadData() {
+
     }
 }

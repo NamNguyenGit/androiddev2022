@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -70,7 +71,28 @@ public class FilesActivity extends DropboxActivity implements NavigationView.OnN
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
+        getMenuInflater().inflate(R.menu.moremenu, menu);
+        MenuItem rf = menu.findItem(R.id.refresh);
+        rf.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem menuItem) {
+                loadData();
+                return true;
+            }
+        });
+        MenuItem item = menu.findItem(R.id.action_search);
+        SearchView searchView = (SearchView) item.getActionView();
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                return false;
+            }
+        });
         return true;
     }
 
@@ -80,13 +102,11 @@ public class FilesActivity extends DropboxActivity implements NavigationView.OnN
             Intent intent = new Intent(this, AboutUsActivity.class);
             startActivity(intent);
         }
-//        else if  (item.getItemId() == R.id.nightmode) {
-//            Intent intent = new Intent(this, NightModeActivity.class);
-//            startActivity(intent);
-//        }
-        else if  (item.getItemId() == R.id.refresh) {
-            loadData();
+        else if  (item.getItemId() == R.id.nightmode) {
+            Intent intent = new Intent(this, NightModeActivity.class);
+            startActivity(intent);
         }
+
         else if (item.getItemId() == R.id.language) {
             ChangeLanguage();
         }
@@ -427,9 +447,7 @@ public class FilesActivity extends DropboxActivity implements NavigationView.OnN
             Intent intent = new Intent(this, NightModeActivity.class);
             startActivity(intent);
         }
-        if  (item.getItemId() == R.id.refresh) {
-            loadData();
-        }
+
 
         return true;
     }
