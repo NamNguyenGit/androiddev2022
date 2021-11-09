@@ -18,7 +18,6 @@ import com.dropbox.core.v2.files.Metadata;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -28,12 +27,13 @@ public class FilesAdapter extends RecyclerView.Adapter<FilesAdapter.MetadataView
     private final Picasso mPicasso;
     private final Callback mCallback;
 
-//    public FilesAdapter(List<Metadata> mFiles, Picasso mPicasso, Callback mCallback) {
-//        this.mFiles = mFiles;
-//        this.mFilesOld = mFilesOld;
-//        this.mPicasso = mPicasso;
-//        this.mCallback = mCallback;
-//    }
+
+    public FilesAdapter(List<Metadata> mFiles, Picasso mPicasso, Callback mCallback) {
+        this.mFiles = mFiles;
+        this.mFilesOld = mFiles;
+        this.mPicasso = mPicasso;
+        this.mCallback = mCallback;
+    }
 
     public void setFiles(List<Metadata> files) {
         mFiles = Collections.unmodifiableList(new ArrayList<>(files));
@@ -49,6 +49,7 @@ public class FilesAdapter extends RecyclerView.Adapter<FilesAdapter.MetadataView
     }
 
     public FilesAdapter(Picasso picasso, Callback callback) {
+
         mPicasso = picasso;
         mCallback = callback;
 
@@ -138,13 +139,13 @@ public class FilesAdapter extends RecyclerView.Adapter<FilesAdapter.MetadataView
                     mFiles = mFilesOld;
                 }else {
                     List<Metadata> list = new ArrayList<>();
-                    for (Metadata metadata: mFilesOld){
+                    for (Metadata metadata: mFiles){
                         if (metadata.getName().toLowerCase().contains(search.toLowerCase())){
                             list.add(metadata);
                         }
                     }
 
-                    mFilesOld = list;
+                    mFiles = list;
                 }
                 FilterResults filterResults = new FilterResults();
                 filterResults.values = mFiles;
