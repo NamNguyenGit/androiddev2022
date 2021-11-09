@@ -46,6 +46,7 @@ import com.google.android.material.navigation.NavigationView;
 
 import java.io.File;
 import java.text.DateFormat;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 
@@ -120,6 +121,9 @@ public class FilesActivity extends DropboxActivity implements NavigationView.OnN
         else if (item.getItemId() == R.id.user) {
             Intent intent = new Intent(this, UserActivity.class);
             startActivity(intent);
+        }
+        else if (item.getItemId() == R.id.logout) {
+            DropboxActivity.startOAuth2Authentication(FilesActivity.this, getString(R.string.app_key), Arrays.asList("account_info.read", "files.content.write","files.content.read"));
         }
 
         return super.onOptionsItemSelected(item);
@@ -454,6 +458,10 @@ public class FilesActivity extends DropboxActivity implements NavigationView.OnN
             Intent intent = new Intent(this, NightModeActivity.class);
             startActivity(intent);
         }
+        if  (item.getItemId() == R.id.logout) {
+            DropboxActivity.startOAuth2Authentication(FilesActivity.this, getString(R.string.app_key), Arrays.asList("account_info.read", "files.content.write","files.content.read"));
+        }
+
 
 
         return true;

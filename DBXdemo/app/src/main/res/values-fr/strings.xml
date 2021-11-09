@@ -12,4 +12,6 @@
     <string name="Name" >Nom</string>
     <string name="user" >Profil</string>
     <string name="type" >Taper</string>
+    <string name="logout" >Se déconnecter</string>
+
 </resources>

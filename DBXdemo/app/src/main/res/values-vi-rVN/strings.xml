@@ -12,4 +12,5 @@
     <string name="Name" >Tên</string>
     <string name="user" >Hồ sơ</string>
     <string name="type" >Kiểu</string>
+    <string name="logout" >Đăng Xuất</string>
 </resources>

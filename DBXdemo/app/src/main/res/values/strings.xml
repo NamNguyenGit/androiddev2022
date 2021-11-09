@@ -15,6 +15,7 @@
     <string name="Name" tools:ignore="MissingTranslation">Name</string>
     <string name="user" tools:ignore="MissingTranslation">Profile</string>
 
+    <string name="logout" tools:ignore="MissingTranslation">Logout</string>
     <string name="type" tools:ignore="MissingTranslation">Type</string>
 
 
