@@ -22,17 +22,24 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-public class FilesAdapter extends RecyclerView.Adapter<FilesAdapter.MetadataViewHolder>  {
-    private static List<Metadata> mFiles;
+public class FilesAdapter extends RecyclerView.Adapter<FilesAdapter.MetadataViewHolder> implements Filterable  {
+    private  List<Metadata> mFiles;
+    private  List<Metadata> mFilesOld;
     private final Picasso mPicasso;
     private final Callback mCallback;
 
-
+//    public FilesAdapter(List<Metadata> mFiles, Picasso mPicasso, Callback mCallback) {
+//        this.mFiles = mFiles;
+//        this.mFilesOld = mFilesOld;
+//        this.mPicasso = mPicasso;
+//        this.mCallback = mCallback;
+//    }
 
     public void setFiles(List<Metadata> files) {
         mFiles = Collections.unmodifiableList(new ArrayList<>(files));
         notifyDataSetChanged();
     }
+
 
 
 
@@ -44,6 +51,7 @@ public class FilesAdapter extends RecyclerView.Adapter<FilesAdapter.MetadataView
     public FilesAdapter(Picasso picasso, Callback callback) {
         mPicasso = picasso;
         mCallback = callback;
+
     }
 
     @Override
@@ -120,4 +128,36 @@ public class FilesAdapter extends RecyclerView.Adapter<FilesAdapter.MetadataView
             }
         }
     }
+    @Override
+    public Filter getFilter() {
+        return new Filter() {
+            @Override
+            protected FilterResults performFiltering(CharSequence charSequence) {
+                String search = charSequence.toString();
+                if (search.isEmpty()) {
+                    mFiles = mFilesOld;
+                }else {
+                    List<Metadata> list = new ArrayList<>();
+                    for (Metadata metadata: mFilesOld){
+                        if (metadata.getName().toLowerCase().contains(search.toLowerCase())){
+                            list.add(metadata);
+                        }
+                    }
+
+                    mFilesOld = list;
+                }
+                FilterResults filterResults = new FilterResults();
+                filterResults.values = mFiles;
+
+                return filterResults;
+            }
+
+            @Override
+            protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
+                mFiles = (List<Metadata>) filterResults.values;
+                notifyDataSetChanged();
+            }
+        };
+    }
+
 }
